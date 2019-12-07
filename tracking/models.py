@@ -129,7 +129,7 @@ class Squirrel(models.Model):
             help_text = _('Squirrel was heard kukking'),
     )
 
-    Quaas = models.BooleanField(
+    quaas = models.BooleanField(
             help_text = _('Squirrel was heard quaaing'),
     )
 
