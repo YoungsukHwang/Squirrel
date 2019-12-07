@@ -6,7 +6,7 @@ urlpatterns = [
    # path('/adopt/', views.
     #path('map/', views.map),
     path('', views.all_squirrels),
-    path('<int:unique_squirrel_id>/', views.update_squirrel),
+    path('<unique_squirrel_id>/', views.update_squirrel),
     path('add/', views.add_squirrel),
     #path('sightings/stats/', views.squirrel_stats),
 

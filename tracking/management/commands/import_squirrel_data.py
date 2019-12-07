@@ -32,7 +32,7 @@ class Command(BaseCommand):
                             primary_fur_color = row[8],
                             location = row[12],
                             specific_location = row[14],
-                            running = False,#row[15],
+                            running = True,#row[15],
                             chasing = False,#row[16],
                             climbing = False,#row[17],
                             eating = False,#row[18],
