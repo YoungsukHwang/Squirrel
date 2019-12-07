@@ -102,22 +102,27 @@ class Squirrel(models.Model):
 
     running = models.BooleanField(
             help_text = _('Squirrel was seen running.'),
+            default=False,
     )
 
     chasing = models.BooleanField(
             help_text = _('Squirrel was seen chasing another squirrel'),
+            default=False,
     )
 
     climbing = models.BooleanField(
             help_text = _('Squirrel was seen climbing a tree or other environmental landmark'),
+            default=False,
     )
 
     eating = models.BooleanField(
             help_text = _('Squirrel was seen eating'),
+            default=False,
     )
 
     foraging = models.BooleanField(
             help_text = _('Squirrel was seen foraging for food'),
+            default=False,
     )
 
     other_activities = models.CharField(
@@ -127,32 +132,40 @@ class Squirrel(models.Model):
 
     kuks = models.BooleanField(
             help_text = _('Squirrel was heard kukking'),
+            default=False,
     )
 
     quaas = models.BooleanField(
             help_text = _('Squirrel was heard quaaing'),
+            default=False,
     )
 
     moans = models.BooleanField(
             help_text = _('Squirrel was heard moaning'),
+            default=False,
     )
 
     tail_flags = models.BooleanField(
             help_text = _('Squirrel was seen flagging its tail'),
+            default=False,
     )
 
     tail_twitches = models.BooleanField(
             help_text = _('Squirrel was seen twitching its tail'),
+            default=False,
     )
 
     approaches = models.BooleanField(
             help_text = _('Squirrel was seen approaching human'),
+            default=False,
     )
 
     indifferent = models.BooleanField(
             help_text = _('Squirrel was indifferent to human presence'),
+            default=False,
     )
 
     runs_from = models.BooleanField(
             help_text = _('Squirrel was seen running from humans'),
+            default=False,
     )
