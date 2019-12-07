@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.shortcuts import redirect
 
 from .models import Squirrel
 from .forms import SquirrelForm
@@ -12,6 +13,11 @@ def all_squirrels(request):
     return render(request, 'tracking/all.html', context)
 
     #return HttpResponse(text)
+
+def squirrel_details(request, unique_squirrel_id):
+    squirrel = Squirrel.objects.get(id=unique_squirrel_id)
+    return HttpResponse(squirrel)
+
 
 def update_squirrel(request, unique_squirrel_id):
     squirrel = Squirrel.objects.get(id=unique_squirrel_id)
@@ -30,7 +36,6 @@ def update_squirrel(request, unique_squirrel_id):
     }
 
     return render(request,'tracking/edit.html', context)
-
 
 
 def add_squirrel(request):

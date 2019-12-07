@@ -3,6 +3,13 @@ from django.utils.translation import gettext as _
 
 class Squirrel(models.Model):
     
+    def __str__(self):
+        return (
+            f"SQR!: {self.unique_squirrel_id} "
+            f"{self.longitude} {self.latitude} {self.hectare} "
+            f"{self.shift} {self.date} {self.hectare_squirrel_number} {self.age}\n"
+        )
+
     longitude = models.DecimalField(
             help_text = _('Longitude Location'),
             max_digits=15,
