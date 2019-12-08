@@ -9,7 +9,7 @@ from .forms import SquirrelForm
 
 
 def map(request):
-    squirrels = Squirrel.objects.order_by('longitude')[:90]
+    squirrels = Squirrel.objects.order_by()[0:99]
     context = {
         'squirrels': squirrels,
     }
@@ -88,5 +88,5 @@ def squirrel_stats(request):
     }
 
     return render(request, 'tracking/stats.html', context)
-#def squirrel_stats(request):
+
 # Create your views here.
