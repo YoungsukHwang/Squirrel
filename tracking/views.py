@@ -52,20 +52,29 @@ def add_squirrel(request):
 
 def squirrel_stats(request):
     #run from human statistic
-    squirrel=0
     runs_yes = 0
     runs_no = 0
-    total=len(Squirrel.objects.all())
     for squirrel in Squirrel.objects.all():
         if squirrel.runs_from == True:
             runs_yes += 1
         else:
             runs_no += 1
-        
+    
+    #location of first sighting     
+    Above_Ground = 0
+    Ground_Plane = 0
+    for squirrel in Squirrel.objects.all():
+        if squirrel.location == 'Above Ground':
+            Above_Ground += 1
+        elif squirrel.location == 'Ground Plane':
+            Ground_Plane += 1
+
 
     context = {
         'runs_yes': runs_yes,
         'runs_no': runs_no,
+        'Above_Ground':  Above_Ground,
+        'Ground_Plane': Ground_Plane,
     }
 
     return render(request, 'tracking/stats.html', context)
