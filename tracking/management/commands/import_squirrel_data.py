@@ -24,43 +24,43 @@ class Command(BaseCommand):
                 reader2 = csv.DictReader(fp)
                 data = list(reader2)
 
-                print("Dict csv reader...")
-
+                print(f"Dict csv reader... The size: {len(data)}")
+                i=0
                 for item in data:
-                    print(item)
+                    i+=1
                     s = Squirrel(
-                            longitude=item['x'],
-                            latitude=item['y'],
-                            unique_squirrel_id=item['unique_squirrel_id'],
-                            hectare=item['hectare'],
-                            shift=item['shift'],
-                            date=convert_date(item['date']),
-                            hectare_squirrel_number=item['hectare_squirrel_number'],
-                            age=item['age'],
-                            primary_fur_color=item['primary_fur_color'],
-                            location=item['location'],
-                            specific_location=item['specific_location'],
+                            longitude=item['X'],
+                            latitude=item['Y'],
+                            unique_squirrel_id=item['Unique Squirrel ID'],
+                            hectare=item['Hectare'],
+                            shift=item['Shift'],
+                            date=convert_date(item['Date']),
+                            hectare_squirrel_number=item['Hectare Squirrel Number'],
+                            age=item['Age'],
+                            primary_fur_color=item['Primary Fur Color'],
+                            location=item['Location'],
+                            specific_location=item['Specific Location'],
 
-                            running=('true'==item['running']),
-                            chasing=('true'==item['chasing']),
-                            climbing=('true'==item['climbing']),
-                            eating=('true'==item['eating']),
-                            foraging=('true'==item['foraging']),
+                            running=('true'==item['Running']),
+                            chasing=('true'==item['Chasing']),
+                            climbing=('true'==item['Climbing']),
+                            eating=('true'==item['Eating']),
+                            foraging=('true'==item['Foraging']),
 
-                            other_activities=item['other_activities'],
+                            other_activities=item['Other Activities'],
                             
-                            kuks=('true'==item['kuks']),
-                            quaas=('true'==item['quaas']),
-                            moans=('true'==item['moans']),
-                            tail_flags=('true'==item['tail_flags']),
-                            tail_twitches=('true'==item['tail_twitches']),
-                            approaches=('true'==item['approaches']),
-                            indifferent=('true'==item['indifferent']),
-                            runs_from=('true'==item['runs_from']),
+                            kuks=('true'==item['Kuks']),
+                            quaas=('true'==item['Quaas']),
+                            moans=('true'==item['Moans']),
+                            tail_flags=('true'==item['Tail flags']),
+                            tail_twitches=('true'==item['Tail twitches']),
+                            approaches=('true'==item['Approaches']),
+                            indifferent=('true'==item['Indifferent']),
+                            runs_from=('true'==item['Runs from']),
                     )
                     s.save()
                 print("Done: Dict csv reader...")
-
+                print(f"Total {i} rows has been updated.")
             #with open(path) as f:
             #    reader = csv.reader(f)
             #    next(reader)
@@ -95,7 +95,7 @@ class Command(BaseCommand):
             #                runs_from = False,#row[28],
 
             #                )
-                print("Done:Regulart csv reader...")
+                print("done")
         except:
             raise CommandError('Error with reading csv or creating objects')
 

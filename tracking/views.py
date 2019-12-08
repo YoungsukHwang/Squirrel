@@ -2,8 +2,18 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.shortcuts import redirect
 
+
 from .models import Squirrel
 from .forms import SquirrelForm
+
+
+
+def map(request):
+    squirrels = Squirrel.objects.order_by('longitude')[:90]
+    context = {
+        'squirrels': squirrels,
+    }
+    return render(request, 'tracking/map.html', context)
 
 def all_squirrels(request):
     squirrels = Squirrel.objects.all()
