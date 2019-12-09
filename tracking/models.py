@@ -14,26 +14,26 @@ class Squirrel(models.Model):
             help_text = _('Longitude Location'),
             max_digits=15,
             decimal_places=13,
-            default='',
+            default='0',
     )
 
     latitude = models.DecimalField(
             help_text = _('Latitude Location'),
             max_digits=15,
             decimal_places=13,
-            default='',
+            default='0',
     )
 
     unique_squirrel_id = models.CharField(
             help_text = _('Squirrel ID'),
             max_length=100,
-            default='',
+            blank=True,
     )
 
     hectare = models.CharField(
             help_text = _('Hectare'),
             max_length=100,
-            default='',
+            blank=True,
     )
 
     PM = 'pm'
@@ -55,12 +55,12 @@ class Squirrel(models.Model):
 
     date = models.DateField(
         help_text=_('Date of sighting'),
-        default='',
+        default='2000-01-01',
     )
 
     hectare_squirrel_number = models.IntegerField(\
             help_text = _('Number of the sighting session'),
-            default='',
+            default='0',
     )
     
     ADULT = 'adult'
@@ -75,7 +75,7 @@ class Squirrel(models.Model):
             help_text = _('Age of squirrel'),
             max_length=10,
             choices=AGE_CHOICES,
-            default='',
+            blank=True,
     )
 
     CINNAMON = 'cinnamon'
@@ -92,7 +92,7 @@ class Squirrel(models.Model):
             help_text = _('Primary fur color'),
             max_length=20,
             choices=PRIMARY_FUR_COLOR_CHOICES,
-            default='',
+            blank=True,
     )
 
     ABOVE_GROUND = 'above ground'
@@ -108,13 +108,13 @@ class Squirrel(models.Model):
             help_text = _('Location of First Sight of the squirrel'),
             max_length=20,
             choices= LOCATION_CHOICES,
-            default='',
+            blank=True,
     )
     
     specific_location = models.CharField(
             help_text = _('Specific Location'),
             max_length=100,
-            default='',
+            blank=True,
     )
 
     running = models.BooleanField(
@@ -145,7 +145,7 @@ class Squirrel(models.Model):
     other_activities = models.CharField(
             help_text = _('Other Activities'),
             max_length=100,
-            default='',
+            blank=True,
     )
 
     kuks = models.BooleanField(
