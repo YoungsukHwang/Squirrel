@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 ## [A description of what has been implemented] </br>
 The Great Joffrey Hosencratz wants to keep track of all the known squirrels and plans to start with Central Park.
 Upon his request, I built an application that can import
@@ -18,12 +16,14 @@ Project Group 30, Section 2
 #[A link to the server running your application]</br>
 For example: https://<your project id>.appspot.com/
 
-<div align="center"  style="height:42px;width:42px">
-  <image src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" style="width:50%; height:50%">
+<div align="centerx">
+  <image src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" style="width:128px;height:128px;">
 </div>
 
 ## Install
+#### Install
 
+<!DOCTYPE html>
 <html>
   <head>
    <ul>I am a King</ul>
