@@ -27,7 +27,7 @@ For example: https://<your project id>.appspot.com/
 
 
 <div align="center">
-  <imge src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" >
+  <image src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" >
 </div>
 
 [TensorFlow](https://www.tensorflow.org/) is an end-to-end open source platform
