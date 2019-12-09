@@ -1,12 +1,9 @@
-<div align="center">
-  <imge src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" >
-</div>
 
 **[A description of what has been implemented]** </br>
 The Great Joffrey Hosencratz wants to keep track of all the known squirrels and plans to start with Central Park.
 Upon his request, I built an application that can import the 2018 Central Park Squirrel Census data and allow his team to add, update, and view squirrel data. 
 
-##Squarrel: The site directory like mysite.
+##'Squarrel': The site directory like mysite.
 ##Tracking: The app directory. This has models.py, views.py, and others as well.
 
 **[Your group name and section]**
@@ -21,17 +18,17 @@ For example: https://<your project id>.appspot.com/
 <!DOCTYPE html>
 <html>
   <head>
-    <ul>I am king</ul>
+   <ul>I am a King</ul>
   </head>
   <body>
-    <ul>I am Queen</ul>
+   <ul>I am a Queen</ul>
   </body>
 </html>
 
 
-**`Documentation`** |
-------------------- |
-[![Documentation](https://img.shields.io/badge/api-reference-blue.svg)](https://www.tensorflow.org/api_docs/) |
+<div align="center">
+  <imge src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" >
+</div>
 
 [TensorFlow](https://www.tensorflow.org/) is an end-to-end open source platform
 for machine learning. It has a comprehensive, flexible ecosystem of
@@ -40,21 +37,6 @@ for machine learning. It has a comprehensive, flexible ecosystem of
 [community](https://www.tensorflow.org/community) resources that lets
 researchers push the state-of-the-art in ML and developers easily build and
 deploy ML-powered applications.
-
-TensorFlow was originally developed by researchers and engineers working on the
-Google Brain team within Google's Machine Intelligence Research organization to
-conduct machine learning and deep neural networks research. The system is
-general enough to be applicable in a wide variety of other domains, as well.
-
-TensorFlow provides stable [Python](https://www.tensorflow.org/api_docs/python)
-and [C++](https://www.tensorflow.org/api_docs/cc) APIs, as well as
-non-guaranteed backward compatible API for
-[other languages](https://www.tensorflow.org/api_docs).
-
-Keep up-to-date with release announcements and security updates by subscribing
-to
-[announce@tensorflow.org](https://groups.google.com/a/tensorflow.org/forum/#!forum/announce).
-See all the [mailing lists](https://www.tensorflow.org/community/forums).
 
 ## Install
 
