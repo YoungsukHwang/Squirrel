@@ -20,6 +20,12 @@ class Command(BaseCommand):
             with open(path, 'w') as csvfile:
                 writer = csv.writer(csvfile)
                 # write your header first
+                header = 'ID,X,Y,Unique Squirrel ID,Hectare,Shift,Date,Hectare Squirrel Number,Age,Primary Fur Color,Location,Specific Location,Running,Chasing,Climbing,Eating,Foraging,Other Activities,Kuks,Quaas,Moans,Tail flags,Tail twitches,Approaches,Indifferent,Runs from'
+                list_ = header.split(',')
+                print(list_)
+
+                writer.writerow(list_)
+
                 for obj in squirrels:
                     writer.writerow(getattr(obj, field.name) for field in Squirrel._meta.fields)
         except:
