@@ -15,7 +15,7 @@ Project Group 30, Section 2
 “UNIs: [yh3206, hhm2212]”
 
 #[A link to the server running your application]</br>
-For example: https://<your project id>.appspot.com/
+For example: https://ieor-e-4501.appspot.com/
 
 <div align="centerx">
   <image src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" style="width:128px;height:128px;">
@@ -23,14 +23,4 @@ For example: https://<your project id>.appspot.com/
 
 ## Install
 #### Install
-
-<html>
-  <head>
-   <ul>I am a King</ul>
-  </head>
-  <body>
-   <ul>I am a Queen</ul>
-  </body>
-</html>
-
 
