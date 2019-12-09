@@ -1,3 +1,4 @@
+Ver10
 ## [A description of what has been implemented] </br>
 The Great Joffrey Hosencratz wants to keep track of all the known squirrels and plans to start with Central Park.
 Upon his request, I built an application that can import
@@ -23,7 +24,6 @@ For example: https://<your project id>.appspot.com/
 ## Install
 #### Install
 
-<!DOCTYPE html>
 <html>
   <head>
    <ul>I am a King</ul>
