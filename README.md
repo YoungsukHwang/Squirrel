@@ -6,8 +6,8 @@ Upon his request, I built an application that can import
 [the 2018 Central Park Squirrel Census data](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw)
 and allow his team to add, update, and view squirrel data. 
 
-### 'Squarrel': The site directory like mysite. </br>
-### Tracking: The app directory. This has models.py, views.py, and others as well.
+#### Squarrel: The site directory like mysite. </br>
+#### Tracking: The app directory. This has models.py, views.py, and others as well.
 
 ## [Your group name and section]</br>
 Project Group 30, Section 2
