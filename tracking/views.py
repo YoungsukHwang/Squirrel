@@ -9,7 +9,7 @@ from .forms import SquirrelForm
 
 
 def map(request):
-    squirrels = Squirrel.objects.order_by()[0:99]
+    squirrels = Squirrel.objects.order_by()[0:100]
     context = {
         'squirrels': squirrels,
     }
