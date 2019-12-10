@@ -1,7 +1,9 @@
+import csv
+
 from django.core.management.base import BaseCommand, CommandError
 
 from tracking.models import Squirrel
-import csv
+
 
 class Command(BaseCommand):
     help = 'To export the csv file from the django database'
@@ -20,10 +22,14 @@ class Command(BaseCommand):
             with open(path, 'w') as csvfile:
                 writer = csv.writer(csvfile)
                 # write your header first
-                header = 'ID,X,Y,Unique Squirrel ID,Hectare,Shift,Date,Hectare Squirrel Number,Age,Primary Fur Color,Location,Specific Location,Running,Chasing,Climbing,Eating,Foraging,Other Activities,Kuks,Quaas,Moans,Tail flags,Tail twitches,Approaches,Indifferent,Runs from'
-                list_ = header.split(',')
-                print(list_)
+                h1 = 'ID,X,Y,Unique Squirrel ID,Hectare,Shift,Date,'
+                h2 = 'Hectare Squirrel Number,Age,Primary Fur Color,Location,'
+                h3 = 'Specific Location,Running,Chasing,Climbing,Eating,'
+                h4 = 'Foraging,Other Activities,Kuks,Quaas,Moans,Tail flags,'
+                h5 = 'Tail twitches,Approaches,Indifferent,Runs from'
+                header = h1+h2+h3+h4+h5
 
+                list_ = header.split(',')
                 writer.writerow(list_)
 
                 for obj in squirrels:
@@ -31,4 +37,5 @@ class Command(BaseCommand):
         except:
             raise CommandError('Error with exporting csv.')
             
-        self.stdout.write(self.style.SUCCESS(f'Successfully exported csv file from {path}.' ))
+        self.stdout.write(self.style.SUCCESS(f'Success export from {path}.'))
+

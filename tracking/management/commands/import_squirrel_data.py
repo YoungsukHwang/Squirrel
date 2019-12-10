@@ -1,12 +1,8 @@
 import csv
-import collections
-
 
 from django.core.management.base import BaseCommand, CommandError
 
-
 from tracking.models import Squirrel
-
 
 
 class Command(BaseCommand):
@@ -22,7 +18,7 @@ class Command(BaseCommand):
 
         try:
             with open(path) as fp:
-                print('hi')
+                print('Hi')
                 reader2 = csv.DictReader(fp)
                 data = list(reader2)
 
@@ -67,7 +63,8 @@ class Command(BaseCommand):
         except:
             raise CommandError('Error with reading csv or creating objects')
 
-        self.stdout.write(self.style.SUCCESS(f'Successfully imported csv file from {path}.' ))
+        self.stdout.write(self.style.SUCCESS(f'Success import from {path}.'))
+
 
 def convert_date(string):
     "Change eight-digits input to YYYY-MM-DD format"

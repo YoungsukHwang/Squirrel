@@ -2,10 +2,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.shortcuts import redirect
 
-
 from .models import Squirrel
 from .forms import SquirrelForm
-
 
 
 def map(request):
@@ -22,8 +20,6 @@ def all_squirrels(request):
     }
     return render(request, 'tracking/all.html', context)
 
-    #return HttpResponse(text)
-
 def update_squirrel(request, squirrel_id):
     squirrel = Squirrel.objects.get(unique_squirrel_id=squirrel_id)
     if request.method == 'POST':
@@ -31,17 +27,14 @@ def update_squirrel(request, squirrel_id):
        if form.is_valid():
            form.save()
            return redirect(f'/sightings/{squirrel_id}')
-        #check data with form
     else:
         form = SquirrelForm(instance=squirrel)
-        #build new empty form
 
     context = {
         'form': form,
     }
 
-    return render(request,'tracking/edit.html', context)
-
+    return render(request, 'tracking/edit.html', context)
 
 def add_squirrel(request):
     if request.method == 'POST':
@@ -49,23 +42,21 @@ def add_squirrel(request):
        if form.is_valid():
            form.save()
            return redirect(f'/sightings/')
-        #check data with form
     else:
         form = SquirrelForm()
-        #build new empty form
 
     context = {
         'form': form,
     }
 
-    return render(request,'tracking/edit.html', context)
+    return render(request, 'tracking/edit.html', context)
 
 def squirrel_stats(request):
     #run from human statistic
     runs_yes = 0
     runs_no = 0
     for squirrel in Squirrel.objects.all():
-        if squirrel.runs_from == True:
+        if squirrel.runs_from:
             runs_yes += 1
         else:
             runs_no += 1
@@ -82,7 +73,7 @@ def squirrel_stats(request):
     chase_yes = 0
     chase_no = 0
     for squirrel in Squirrel.objects.all():
-        if squirrel.chasing == True:
+        if squirrel.chasing:
             chase_yes += 1
         else:
             chase_no += 1
@@ -90,7 +81,7 @@ def squirrel_stats(request):
     moans_yes = 0
     moans_no = 0
     for squirrel in Squirrel.objects.all():
-        if squirrel.moans == True:
+        if squirrel.moans:
             moans_yes += 1
         else:
             moans_no += 1
@@ -98,7 +89,7 @@ def squirrel_stats(request):
     kuks_yes = 0
     kuks_no = 0
     for squirrel in Squirrel.objects.all():
-        if squirrel.kuks == True:
+        if squirrel.kuks:
             kuks_yes += 1
         else:
             kuks_no += 1

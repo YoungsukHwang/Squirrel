@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext as _
 
+
 class Squirrel(models.Model):
     
     def __str__(self):
@@ -51,6 +52,7 @@ class Squirrel(models.Model):
             max_length=2,
             choices=SHIFT_CHOICES,
             default=OTHER,
+            blank=True,
     )
 
     date = models.DateField(
@@ -80,7 +82,7 @@ class Squirrel(models.Model):
 
     CINNAMON = 'cinnamon'
     WHITE = 'white'
-    BLACK = 'balck'\
+    BLACK = 'balck'
 
     PRIMARY_FUR_COLOR_CHOICES = (
         (CINNAMON, 'Cinnamon'),
@@ -187,3 +189,4 @@ class Squirrel(models.Model):
             help_text = _('Squirrel was seen running from humans'),
             default=False,
     )
+
