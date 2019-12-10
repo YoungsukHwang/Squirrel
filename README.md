@@ -1,4 +1,4 @@
-# Welcome to the Squirrely Worldmap !
+# Welcome to Squirrely Worldmap !
 
 ## [A description of what has been implemented] </br>
 The Great Joffrey Hosencratz wants to keep track of all the known squirrels and plans to start with Central Park.
@@ -16,7 +16,7 @@ Project Group 30, Section 2
 “UNIs: [yh3206, hhm2212]”
 
 ## [A link to the server running your application]</br>
-For example: https://ieor-e-4501.appspot.com/
+Ticket to the world: https://ieor-e-4501.appspot.com/
 
 <div align="centerx">
   <image src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" style="width:128px;height:128px;">
