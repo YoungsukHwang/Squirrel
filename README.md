@@ -8,7 +8,7 @@ and allow his team to add, update, and view squirrel data.
 
 What we did in this project is we first started by building the model of the squirrel. We then worked on the views and correct linking through the URLS file.
 
-In our project, we learned how to develop a web application by using django, and we also learned how to utilize Github for application development with multiple people.
+In our project, we developed a web application using django. We also practiced Github for application development with multiple people and developed management commands on Unix for the data ingestion to our model.
 
   #### Squarrel: The site directory like mysite. </br>
   #### Tracking: The app directory. This has models.py, views.py, and others as well.
