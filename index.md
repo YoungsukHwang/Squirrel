@@ -18,8 +18,7 @@ Ticket to the world: https://ieor-e-4501.appspot.com/
 ### A link to the project page
 https://youngsukhwang.github.io/Squirrel/
 
-<image src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" style="width:256px;height:256px;"></image>
-![Image]("https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" )
+<image src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" style="width:150px;height:100px;"></image>
 
 --------------------
 
