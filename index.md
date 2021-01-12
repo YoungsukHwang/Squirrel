@@ -1,5 +1,4 @@
 # Welcome to Squirrely Worldmap !
-<image src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" style="width:128px;height:128px;">
 
 ## [A description of what has been implemented] </br>
 The Great Joffrey Hosencratz wants to keep track of all the known squirrels and plans to start with Central Park.
@@ -19,6 +18,8 @@ Ticket to the world: https://ieor-e-4501.appspot.com/
 
 ## [A link to the project page]</br>
 https://youngsukhwang.github.io/Squirrel/
+
+<image src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" style="width:128px;height:128px;">
 
 --------------------
 
