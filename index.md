@@ -12,13 +12,15 @@ In our project, we developed a web application using django.
  - Squarrel: The site directory like mysite.
  - Tracking: The app directory. This has models.py, views.py, and others as well.
 
-## A link to the server running your application
+### A link to the server running your application
 Ticket to the world: https://ieor-e-4501.appspot.com/
 
-## A link to the project page
+### A link to the project page
 https://youngsukhwang.github.io/Squirrel/
 
-<image src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" style="width:128px;height:128px;"></image>
+<image src="https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" style="width:256px;height:256px;"></image>
+![Image]("https://cdn.pixabay.com/photo/2014/12/17/00/28/red-squirrel-570936_960_720.jpg" )
+
 --------------------
 
 ## Welcome to GitHub Pages
